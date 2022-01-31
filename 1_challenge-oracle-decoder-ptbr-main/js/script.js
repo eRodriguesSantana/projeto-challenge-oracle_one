@@ -1,20 +1,57 @@
+function criptografar(word) {
+    word = word.replaceAll('e', 'enter')
+        .replaceAll('i', 'imes')
+        .replaceAll('a', 'ai')
+        .replaceAll('o', 'ober')
+        .replaceAll('u', 'ufat');
+    return word;
+}
 
-/* Regras Codificador: 
-"e" é convertido para "enter" 
-"i" é convertido para "imes"
-"a" é convertido para "ai"
-"o" é convertido para "ober"
-"u" é convertido para "ufat"
-Apenas letras minúsculas
-Não permite acentuação   
-*/
+function verificaSeTemLetraMaiuscula(entrada) {
+    var retorno = false;
+    if (entrada.toLowerCase() != entrada) {
+        alert("é proibido usar Letras Maiusculas");
+        retorno = true;
 
-/* Regras Decodificador: 
-"enter" é convertido para "e" 
-"imes" é convertido para "i"
-"ai" é convertido para "a"
-"ober" é convertido para "o"
-"ufat" é convertido para "u"
-Apenas letras minúsculas
-Não permite acentuação     
-*/
+    }
+    return retorno;
+}
+
+document.getElementById("btn-cripto").addEventListener("click", function () {
+
+    var textoCriptografado = document.getElementById("input-texto").value;
+    if (verificaSeTemLetraMaiuscula(textoCriptografado)) {
+        return;
+    }
+
+    document.getElementById("msg").value = criptografar(textoCriptografado);
+})
+
+document.getElementById("btn-descripto").addEventListener("click", function () {
+
+    var textoCriptografado = document.getElementById("input-texto").value;
+    textoCriptografado = textoCriptografado.replaceAll('e', 'enter')
+        .replaceAll('imes', 'i')
+        .replaceAll('ai', 'a')
+        .replaceAll('ober', 'o')
+        .replaceAll('ufat', 'u');
+
+    document.getElementById("msg").value = textoCriptografado;
+})
+
+document.getElementById("btn-clean").addEventListener("click", function () {
+    document.getElementById("input-texto").value = "";
+    document.getElementById("msg").value = "";
+})
+
+document.getElementById("btn-copy").addEventListener("click", function () {
+
+    var copyText = document.getElementById("msg");
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copyText.value);
+
+    alert("o texto foi copiado: " + copyText.value);
+})
