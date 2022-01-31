@@ -53,5 +53,5 @@ document.getElementById("btn-copy").addEventListener("click", function () {
 
     navigator.clipboard.writeText(copyText.value);
 
-    alert("o texto foi copiado: " + copyText.value);
+    alert("texto copiado: " + copyText.value);
 })
