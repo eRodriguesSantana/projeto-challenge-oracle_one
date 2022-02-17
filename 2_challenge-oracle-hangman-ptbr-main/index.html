@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container" class="jogo">
+    <!--desenho da forca-->
+    <div id="d1"></div>
+    <div id="d4"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+  </div>
+
+  <div id="nav"></div>
+
+  <div id="jogo" class="jogo"></div>
+
+  <div id="jogar">
+    Arrisque uma letra: <input type="text" id="jog" class="ler" maxlength="1" />
+  </div>
+
+  <br>
+
+  <div id="jogando">
+    <div id="jogando" class="jogo">
+      Letras utilizadas: <input type="text" id="jogadas" class="ler" disabled="disabled" />
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="bt" class="jogo">
+    <button id="btn">Nova Palavra</button>
+  </div>
+
+  <input type='button' onclick='exibeCaixaDeTexto()' value='Adicionar Nova Palavra'/>
+  <div id="adicionaNovaPalavra" style="display:none">
+  <input type="text" id="novaPalavra" />
+  <button onclick="adicionar()">Adicionar ingredientes</button>
+  </div>
+
+  <script type="text/javascript" src="forca.js"></script>
+</body>
+
+</html>

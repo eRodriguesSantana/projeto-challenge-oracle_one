@@ -1,0 +1,139 @@
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jogo{
+  display:inline-block;
+}
+
+#container{
+  padding:10px 30px;
+  position:absolute;
+}
+
+#nav{
+  position:absolute;
+  width:100px;
+  height:30px;
+  font-size:20px;
+  margin:205px 0px 0px 28px;
+}
+
+#jogo{
+  margin:150px 0px 0px 150px;
+  position:absolute;
+}
+
+#jogar{
+  display:inline-block;
+  margin:200px 0px 0px 250px;
+}
+
+#jogando{
+  display:inline-block;
+  margin:20px 0px 0px 120px;
+}
+
+#jogadas{
+  width:300px;
+  margin-left:40px;
+  padding-left:0px;
+}
+
+#bt{
+  margin-left:50px;
+}
+
+.letra, .ler{
+  font-size:20px;
+  padding-left:10px;
+  margin-left:10px;
+  border:none;
+  border-bottom:1px solid #000;
+  background-color:#fff;
+  outline:none;   
+  width:35px;
+}
+
+/*Inicio desenho*/
+#d1{
+  width:60px;
+  height:60px;
+  border:6px solid #000;
+  border-radius:50%;
+}
+
+#d2{
+  position:absolute;
+  width:3px;
+  height:80px;
+  border:2px solid #000;
+  margin-left:31px;
+  background-color:#000;
+}
+
+#d3{
+  position:absolute;
+  width:0px;
+  background-color:#000;
+  height:45px;
+  border:3px solid #000;
+  transform:rotate(-45deg);
+  margin-left:50px;
+}
+
+#d4{
+  position:absolute;
+  width:0px;
+  background-color:#000;
+  height:45px;
+  border:3px solid #000;
+  transform:rotate(45deg);
+  margin-left:12px;
+}
+
+#d5{
+  position:absolute;
+  width:0px;
+  background-color:#000;
+  height:45px;
+  border:3px solid #000;
+  transform:rotate(45deg);
+  margin:72px 0px 0px 12px;
+}
+
+#d6{
+  position:absolute;
+  width:0px;
+  background-color:#000;
+  height:45px;
+  border:3px solid #000;
+  transform:rotate(-45deg);
+  margin:72px 0px 0px 50px;
+}
+/*Fim desenho*/
