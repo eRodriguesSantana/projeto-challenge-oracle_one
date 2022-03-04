@@ -1,1 +1,1 @@
-# projeto-challenge-oracle_one
+# Projetos criado durante a Formação Oracle Next Education em parceria com a Alura
