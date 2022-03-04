@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #464646;
+    font-size: 16px;
+}
+
+.sobre, .formacao-academica, .contato {
+    background-color: #D4E4FA;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+nav h1::before {
+    content: url(../img/icones/auto_awesome_black_24dp\ 1.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+nav h1 {
+    font-size: 16px;
+}
+
+a.email {
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    padding: 0px 50px;
+    margin: 50px 0 70px 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao {
+    width: 60%;
+}
+
+.foto-perfil {
+    width: 25%;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+header p {
+    font-size: 22px;
+}
+
+header h2, header p {
+    margin-bottom: 20px;
+}
+
+header ul {
+    margin-left: -15px;
+}
+
+header li::after {
+    content: url(../img/icones/seta.png);
+    margin-left: 5px;
+}
+
+main section {
+    padding: 85px
+}
+
+main h2 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.skills h2, .hobbies h2, .formacao-academica h2, .experiencia h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sobre p {
+    margin: 20px 0;
+}
+
+.assinatura {
+    width: 30%;
+}
+
+.skill, .hobby {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    padding: 105px 16px 16px 16px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.skill i, .hobby i {
+    font-size: 32px;
+    color: #2A7AE4;
+    margin-bottom: 5px;
+}
+
+.skill p, .hobby p {
+    font-weight: bold;
+}
+
+.formacao-academica {
+    padding-bottom: 130px;
+}
+
+.formacao {
+    display: inline-block;
+    width: 368px;
+    height: 286px;
+    margin: 20px;
+}
+
+.formacao .img {
+    width: 368px;
+    height: 286px;
+    padding: 60px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.formacao img {
+    width: 100%;
+}
+
+.projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.projeto:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.projeto .img {
+    width: 60%;
+    padding: 30px;
+    margin-right: 35px;
+    border: 1px solid #2A7AE4;
+}
+
+.projeto img {
+    width: 100%;
+}
+
+.projeto .info {
+    width: 30%;
+}
+
+.projeto p {
+    margin-bottom: 20px;
+}
+
+.repositorio, .demo {
+    padding: 12px 20px;
+}
+
+.repositorio {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    text-align: center;
+}
+
+.demo {
+    color: white;
+    background-color: #2A7AE4;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.formulario {
+    width: 50%;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    background-color: white;
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+label::before {
+    content: '';
+    margin-left: 20px;
+}
+
+label, textarea {
+    margin: 15px 0;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+    max-height: 300px;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 2px solid #2A7AE4;
+}
+
+input[type='submit'] {
+    color: white;
+    background-color: #2A7AE4;
+}
+
+footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 18px;
+}
+
+footer a {
+    font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    :target {
+        scroll-margin-top: 1em;
+    }
+}
